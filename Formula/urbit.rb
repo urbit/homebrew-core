@@ -1,8 +1,8 @@
 class Urbit < Formula
   desc "Personal cloud computer"
   homepage "https://urbit.org"
-  url "https://github.com/urbit/urbit/archive/v0.4.5.tar.gz"
-  sha256 "ac013b5a02d250450c983a3efc0997f2a5f5675bc3e16b51ed0a54dff1caef7c"
+  url "https://media.urbit.org/dist/src/urbit-0.5.0.tar.gz"
+  sha256 "863bd7bc353554f010e6cdbbf45a0c1a16da2cc07aeeea6ed1c8c45dd1dbf4fd"
 
   bottle do
     cellar :any
@@ -22,7 +22,7 @@ class Urbit < Formula
   depends_on "cmake" => :build
 
   def install
-    system "make", "BIN=#{bin}", "LIB=#{share}"
+    system "make", "BIN=#{bin}"
   end
 
   test do
