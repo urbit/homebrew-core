@@ -26,6 +26,6 @@ class Urbit < Formula
   end
 
   test do
-    assert_match "simple usage:", shell_output("#{bin}/urbit 2>&1", 1)
+    assert_match "Development Usage:", shell_output("#{bin}/urbit 2>&1", 1)
   end
 end
